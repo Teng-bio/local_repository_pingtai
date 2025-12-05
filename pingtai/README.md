@@ -26,3 +26,10 @@ nmr-processor \
     --output_dir /path/to/results \
     --gcf_matrix /path/to/gcf_matrix.csv
 ```
+## 作者
+
+Teng
+
+---
+
+
