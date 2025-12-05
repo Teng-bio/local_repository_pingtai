@@ -1,0 +1,32 @@
+# GCF分析系统配置文件示例
+# 使用方法: python run_pipeline.py --config example_config.yaml
+
+# 必需参数
+antismash_dir: "/home/teng/nmr/antismash/"
+mibig_dir: "/home/teng/BGCdetection/MIBIG_dataset/mibig_gbk_4.0/"
+output_dir: "/home/teng/claude_code/可视化/output/"
+
+# 可选参数
+bigscape_input_dir: "/home/teng/claude_code/可视化/data/bigscape_input"  # 默认: output_dir/data/bigscape_input
+bigscape_output_dir: "/home/teng/claude_code/可视化/data/bigscape_output"  # 默认: output_dir/data/bigscape_output
+
+# 16S聚类（选择其中一种方式）
+
+# 方式1：使用16S聚类（提供基因组目录）
+# genome_dir: "/path/to/genome_fasta_files/"  # 取消注释并设置实际路径
+
+# 方式2：不使用16S聚类（保持null或删除该行）
+genome_dir: /home/teng/claude_code/可视化/data/fatsa  # 保持null表示不计算16S，直接读取existing 16s_similarity_matrix.csv
+
+# 注意：如果指定了genome_dir但路径不存在将会报错
+#      如需计算16S序列，请先安装barrnap: conda install -c bioconda barrnap
+
+# 运行模式
+auto_run_bigscape: ture # 是否自动运行BigSCAPE
+
+# 可视化参数
+figsize: [14, 14]  # 图像大小（宽度，高度）
+dpi: 300  # 图像分辨率
+
+# 其他
+verbose: false  # 详细输出

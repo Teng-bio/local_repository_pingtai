@@ -1,0 +1,15 @@
+numpy
+pandas
+scipy
+plotly
+psutil
+scikit-learn
+tqdm
+tables
+xlsxwriter
+chardet
+appdirs
+nmrglue
+matplotlib
+seaborn
+joblib
