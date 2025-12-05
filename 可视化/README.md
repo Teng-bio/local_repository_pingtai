@@ -345,7 +345,7 @@ python run_pipeline.py \
 
 ## 👤 作者
 
-基于原始strain_gcf_network_v4.py增强开发
+Teng
 
 ---
 
